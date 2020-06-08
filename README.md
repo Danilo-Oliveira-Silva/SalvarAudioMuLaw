@@ -6,11 +6,17 @@ Este código corrige um problema comum de decodificação de U-law dos audio, on
 Essa classe utiliza a biblioteca NAudio
   
 SalvarPCM(String PastaGravacoes, String nome, Byte[] gravacaoB, int rate, int bits)
+
   PastaGravacoes = Pasta onde será gravado o arquivo
+  
   nome = nome do arquivo wav.
+  
   gravacaoB = vetor de bytes com o audio em u-law
+  
   rate = frequencia de amostragem -> ex: 8000 (Hz)
+  
   bits = quantidade de bits no pacote
+  
  
 Exemplo de chamada
 MuLawParaPCM.SalvarPCM("C:\\gravacoes","teste.wav", bytes. 8000, 16)
